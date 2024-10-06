@@ -1,0 +1,347 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f4f6f8;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 5%;
+    background-color: #1c1e21;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  header .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ff9900;
+  }
+  
+  nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #ff9900;
+  }
+  
+  /* Banner Section */
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6em 2em;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('banner.jpg') center/cover;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .banner h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  .banner p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 0.8em 2em;
+    background-color: #ff9900;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #e88c00;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* How It Works Section */
+  #how-it-works {
+    padding: 3em 5%;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  #how-it-works h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+  }
+  
+  .steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+  }
+  
+  .step {
+    background-color: #ff9900;
+    padding: 2em;
+    border-radius: 10px;
+    width: 30%;
+    color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .step h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  
+  .step p {
+    font-size: 1em;
+  }
+  
+  .step:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Features Section */
+  .features {
+    background-color: #f9fafc;
+    padding: 3em 5%;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+  }
+  
+  .features ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+  }
+  
+  .features li {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 1.5em 2em;
+    border-radius: 10px;
+    width: 30%;
+    font-size: 1.2em;
+    font-weight: 500;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .features li:hover {
+    background-color: #e88c00;
+  }
+  
+  /* Login and Registration */
+  .login-section,
+  .register-section {
+    width: 100%;
+    max-width: 400px;
+    margin: 3em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-section h2,
+  .register-section h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 1em;
+    text-align: center;
+  }
+  
+  .login-section form,
+  .register-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-section input,
+  .register-section input {
+    padding: 0.8em;
+    margin-bottom: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  button {
+    padding: 0.8em;
+    border: none;
+    background-color: #ff9900;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #e88c00;
+  }
+  
+  /* Voting Page */
+  .voting-section {
+    max-width: 600px;
+    margin: 3em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .voting-section h2 {
+    font-size: 2.2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .voting-section label {
+    display: block;
+    margin: 1em 0;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  .voting-section input[type="radio"] {
+    margin-right: 0.5em;
+  }
+  
+  /* Results Page */
+  .results-section {
+    max-width: 700px;
+    margin: 3em auto;
+    padding: 2em;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .results-section h2 {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 1em;
+  }
+  
+  .results-section p {
+    font-size: 1.2em;
+    margin: 1em 0;
+  }
+  
+  .results-section button {
+    padding: 0.8em 1.5em;
+    margin-top: 1em;
+  }
+  
+  /* Education Section */
+  .education-section {
+    padding: 3em 5%;
+    background-color: #f9fafc;
+  }
+  
+  .education-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  
+  .education-section article {
+    background-color: #fff;
+    padding: 2em;
+    margin: 1em 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  
+  .education-section p {
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1c1e21;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  footer .social-links a {
+    color: #fff;
+    margin: 0 0.5em;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  footer .social-links a:hover {
+    color: #ff9900;
+  }
+  /* Smooth scroll styling */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Interactive step cards */
+  .step {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Animated scroll-in effect */
+  .scroll-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  
+  .features {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  /* Results progress bar styling */
+  .result-bar {
+    padding: 0.5em;
+    color: #fff;
+    font-weight: bold;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    text-align: left;
+    transition: width 0.6s ease;
+  }
+  
